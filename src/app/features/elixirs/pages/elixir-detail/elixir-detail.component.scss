@@ -1,0 +1,56 @@
+.elixir-detail-main-container
+{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    .elixir-detail-back-container
+    {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        img
+        {
+            width: 30px;
+            transform: rotate(90deg);
+        }
+        span
+        {
+            font-size: 24px;
+            color: #3f51b5;
+        }
+    }
+    h1
+    {
+        font-weight: 700;
+        font-size: 30px;
+        color: #3f51b5;
+    }
+    .elixir-detail-main-container
+    {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        p
+        {
+            font-size: 20px;
+            span
+            {
+                font-weight: 700;
+                text-decoration: underline;
+            }
+        }
+        ul
+        {
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+<mat-card class="elixir-card">
+    <mat-card-header>
+      <mat-card-title>{{elixir.name || 'Unnamed'}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="elixir-card-body">
+      <p><span>Effect:</span> {{elixir.effect || 'None'}}</p>
+      <p><span>Side effects:</span> {{elixir.sideEffects || 'None'}}</p>
+      <ng-container *ngIf="elixir.ingredients.length > 0">
+          <p><span>Ingredients:</span></p>
+          <ul>
+              <li *ngFor="let ingredient of elixir.ingredients">{{ingredient.name || 'Unknown'}}</li>
+          </ul>
+      </ng-container>
+      <ng-container *ngIf="elixir.ingredients.length == 0">
+          <p><span>Ingredients:</span> Unknow</p>
+      </ng-container>
+    </mat-card-content>
+    <mat-card-actions>
+      <button routerLink="/elixirs/{{elixir.id}}" mat-raised-button color="primary">VIEW DETAIL</button>
+    </mat-card-actions> 
+</mat-card>

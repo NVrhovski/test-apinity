@@ -1,0 +1,33 @@
+.searchbar-main-container
+{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    .searchbar-form
+    {
+        width: 80%;
+        .searchbar-input 
+        {
+            width: 100%;
+        }
+    }
+    .searchbar-icon-container
+    {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 400ms ease-in-out all;
+        padding: 5px;
+        &:hover
+        {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        img
+        {
+            width: 100%;
+        }
+    }
+}

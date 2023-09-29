@@ -1,0 +1,8 @@
+<main class="elixirs-main-container">
+    <app-searchbar></app-searchbar>
+    <div class="elixirs-card-wrapper">
+        <app-elixir-card *ngFor="let elixir of elixirs" [elixir]="elixir"></app-elixir-card>
+    </div>
+</main>
+
+<app-loader *ngIf="loading"></app-loader>

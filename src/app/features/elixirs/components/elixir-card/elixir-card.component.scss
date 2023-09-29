@@ -1,0 +1,16 @@
+.elixir-card
+{
+    height: 300px;
+    justify-content: space-between;
+    gap: 20px;
+    .elixir-card-body
+    {
+        height: 200px;
+        overflow-y: auto;
+        span
+        {
+            font-weight: 700;
+            text-decoration: underline;
+        }
+    }
+}

@@ -8,7 +8,7 @@ export interface elixir {
     sideEffects: string | null,
     characteristics: string | null,
     time: string | null,
-    difficulty: string[],
+    difficulty: string,
     ingredients: ingredient[],
     inventors: inventor[],
     manufacturer: string | null
